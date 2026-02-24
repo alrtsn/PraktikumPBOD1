@@ -1,5 +1,5 @@
 /* Nama File    : MTitik.java
- * Deskipsi     : berisi atribut dan method dalam class Titik
+ * Deskipsi     : berisi program utama untuk menguji dan menjalankan class Titik
  * Pembuat      : Amelia Aristianti / 24060124120008
  * Tanggal      : 24 Februari 2026
  */
