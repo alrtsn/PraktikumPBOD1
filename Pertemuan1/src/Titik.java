@@ -4,7 +4,6 @@
  * Tanggal      : 24 Februari 2026
  */
 
-
 public class Titik {
     /***************ATRIBUT***************/
     double absis;
