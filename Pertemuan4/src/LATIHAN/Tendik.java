@@ -19,8 +19,13 @@ public class Tendik extends Pegawai {
         this.bidang = bidang;
     }
 
-    public String getBidang()         { return bidang; }
-    public void   setBidang(String b) { this.bidang = b; }
+    public String getBidang() {
+        return bidang;
+    }
+
+    public void   setBidang(String b) {
+        this.bidang = b;
+    }
 
     public LocalDate getTanggalPensiun() {
         return tanggalLahir.plusYears(BUP).withDayOfMonth(1).plusMonths(1);

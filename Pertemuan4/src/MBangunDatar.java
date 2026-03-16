@@ -1,14 +1,13 @@
 /*
  * File        : MBangunDatar.java
- * Deskripsi   : Main class untuk menguji keyword super, override printInfo(),
- *               dan static counter (Bagian 2 & 3)
+ * Deskripsi   : Main class untuk menguji keyword super, override printInfo(), dan static counter (Bagian 2 & 3)
  * Pembuat     : Amelia Aristianti / 24060124120008
  * Tanggal     : 10 Maret 2026
  */
 public class MBangunDatar {
 public static void main(String[] args) {
 
-        System.out.println("===== PERSEGI 1 (default constructor) =====");
+        System.out.println("===== PERSEGI 1 (default konstruktor) =====");
         Persegi p1 = new Persegi();
         p1.setSisi(5.0);
         p1.setWarna("Merah");
@@ -40,15 +39,6 @@ public static void main(String[] args) {
 
         System.out.println("===== STATIC COUNTER =====");
         BangunDatar.printCounterBangunDatar();
-    }
-        /*
-         * CATATAN – Overriding static method (Bagian 3):
-         * Static method TIDAK dapat di-override secara polimorfis dalam Java.
-         * Jika kita mendefinisikan method static dengan nama yang sama di subclass
-         * (misal printCounterBangunDatar() di Persegi), hal itu disebut METHOD HIDING,
-         * bukan overriding. Pemanggilan tetap ditentukan oleh tipe referensi (compile-time),
-         * bukan tipe objek (runtime). Oleh karena itu anotasi @Override tidak berlaku
-         * untuk static method.
-         */
+    }    
     
 }

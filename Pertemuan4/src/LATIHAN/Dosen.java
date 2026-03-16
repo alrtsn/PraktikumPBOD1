@@ -17,6 +17,11 @@ public abstract class Dosen extends Pegawai {
         this.fakultas = fakultas;
     }
 
-    public String getFakultas() { return fakultas; }
-    public void setFakultas(String fakultas) { this.fakultas = fakultas; }
+    public String getFakultas() {
+        return fakultas;
+    }
+    
+    public void setFakultas(String fakultas) {
+        this.fakultas = fakultas;
+    }
 }

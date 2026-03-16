@@ -6,7 +6,6 @@
  */
 package LATIHAN;
 
-
 import java.time.LocalDate;
 import java.time.Period;
 
@@ -22,11 +21,16 @@ public class DosenTamu extends Dosen {
         this.tanggalAkhirKontrak = tanggalAkhirKontrak;
     }
 
-    public String    getNidk()                { return nidk; }
-    public LocalDate getTanggalAkhirKontrak() { return tanggalAkhirKontrak; }
+    public String getNidk() {
+        return nidk;
+    }
+    public LocalDate getTanggalAkhirKontrak() {
+        return tanggalAkhirKontrak;
+    }
 
-    public Period getSisaKontrak() {
-        return Period.between(LocalDate.now(), tanggalAkhirKontrak);
+    public int getSisaKontrakBulan() {
+        Period sisa = Period.between(LocalDate.now(), tanggalAkhirKontrak);
+        return sisa.getYears() * 12 + sisa.getMonths();
     }
 
     @Override
@@ -36,8 +40,8 @@ public class DosenTamu extends Dosen {
 
     @Override
     public void printInfo() {
-        Period masa        = getMasaKerja();
-        Period sisaKontrak = getSisaKontrak();
+        Period masa = getMasaKerja();
+
         System.out.println("NIP            : " + nip);
         System.out.println("NIDK           : " + nidk);
         System.out.println("Nama           : " + nama);
@@ -47,8 +51,7 @@ public class DosenTamu extends Dosen {
         System.out.println("Fakultas       : " + fakultas);
         System.out.println("Masa Kerja     : " + masa.getYears() + " tahun " + masa.getMonths() + " bulan");
         System.out.println("Akhir Kontrak  : " + formatTanggal(tanggalAkhirKontrak));
-        System.out.println("Sisa Kontrak   : " + sisaKontrak.getMonths() + " bulan "
-                                               + sisaKontrak.getDays()   + " hari");
+        System.out.println("Sisa Kontrak   : " + getSisaKontrakBulan() + " bulan");
         System.out.println("Gaji Pokok     : " + formatRupiah(gajiPokok));
         System.out.printf ("Tunjangan      : 2.5%% x %s = %s%n",
                            formatRupiah(gajiPokok), formatRupiah(getTunjangan()));

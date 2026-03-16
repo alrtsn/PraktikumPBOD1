@@ -11,9 +11,7 @@ import java.time.LocalDate;
 public class MLatihan {
     public static void main(String[] args) {
 
-        System.out.println("============================================================");
-        System.out.println("                    DOSEN TETAP                            ");
-        System.out.println("============================================================");
+        System.out.println("====== DOSEN TETAP =====");
         DosenTetap dt = new DosenTetap(
             "9545647548",
             "78647324",
@@ -27,13 +25,11 @@ public class MLatihan {
 
         System.out.println();
 
-        System.out.println("============================================================");
-        System.out.println("                    DOSEN TAMU                             ");
-        System.out.println("============================================================");
+        System.out.println("====== DOSEN TAMU =====");
         DosenTamu dtu = new DosenTamu(
             "8877665544",
             "99887766",
-            "Budi Santoso",
+            "Veyoyoy jago banget cuma bisa granger",
             LocalDate.of(1985, 3, 20),
             LocalDate.of(2023, 6, 1),
             4_500_000,
@@ -44,12 +40,10 @@ public class MLatihan {
 
         System.out.println();
 
-        System.out.println("============================================================");
-        System.out.println("              TENAGA KEPENDIDIKAN (TENDIK)                 ");
-        System.out.println("============================================================");
+        System.out.println("====== TENAGA PENDIDIKAN (TENDIK) =====");
         Tendik tendik = new Tendik(
             "7766554433",
-            "Citra Dewi",
+            "Gojo Satoru",
             LocalDate.of(1988, 7, 15),
             LocalDate.of(2010, 8, 1),
             3_500_000,
