@@ -19,4 +19,4 @@ public class Burung extends Anabul {
     public void bersuara() {
         System.out.println("Cara Bersuara Burung : Cuit");
     }
-}
+} 
