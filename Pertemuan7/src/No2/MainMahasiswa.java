@@ -1,4 +1,4 @@
-/* Nama File    : Mahasiswa.java
+/* Nama File    : MainMahasiswa.java
  * Deskripsi    : Program main Mahasiswa
  * Pembuat      : Amelia Aristianti / 24060124120008
  * Tanggal      : 21 April 2026
